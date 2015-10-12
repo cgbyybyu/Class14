@@ -1,25 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="7" passed="6">
   <reporter-output>
+    <line>
+      <![CDATA[This is log from my test]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6108" started-at="2015-10-12T22:03:53Z" finished-at="2015-10-12T22:03:59Z">
+  <suite name="Default suite" duration-ms="19520" started-at="2015-10-12T22:31:56Z" finished-at="2015-10-12T22:32:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6108" started-at="2015-10-12T22:03:53Z" finished-at="2015-10-12T22:03:59Z">
-      <class name="com.toolsqa.framework.tests.TestNG_002">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_002@4563e9ab]" name="beforeMethod" is-config="true" duration-ms="4964" started-at="2015-10-12T15:03:53Z" finished-at="2015-10-12T15:03:58Z">
+    <test name="Default test" duration-ms="19520" started-at="2015-10-12T22:31:56Z" finished-at="2015-10-12T22:32:16Z">
+      <class name="com.toolsqa.framework.xml.NewTestXML">
+        <test-method status="PASS" signature="AssertStringEqualAndIdenticalToSelf()[pri:0, instance:com.toolsqa.framework.xml.NewTestXML@5a39699c]" name="AssertStringEqualAndIdenticalToSelf" duration-ms="140" started-at="2015-10-12T15:32:11Z" finished-at="2015-10-12T15:32:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssertStringEqualAndIdenticalToSelf -->
+      </class> <!-- com.toolsqa.framework.xml.NewTestXML -->
+      <class name="com.toolsqa.framework.tests.TestNG_003">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_003@1fbc7afb]" name="beforeMethod" is-config="true" duration-ms="15" started-at="2015-10-12T15:31:56Z" finished-at="2015-10-12T15:31:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="run()[pri:0, instance:com.toolsqa.framework.tests.TestNG_002@4563e9ab]" name="run" duration-ms="6" started-at="2015-10-12T15:03:58Z" finished-at="2015-10-12T15:03:58Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_003@1fbc7afb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-10-12T15:31:57Z" finished-at="2015-10-12T15:31:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="run3()[pri:0, instance:com.toolsqa.framework.tests.TestNG_003@1fbc7afb]" name="run3" duration-ms="0" started-at="2015-10-12T15:31:57Z" finished-at="2015-10-12T15:31:57Z">
+          <reporter-output>
+            <line>
+              <![CDATA[This is log from my test]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- run3 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_003@1fbc7afb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-10-12T15:31:57Z" finished-at="2015-10-12T15:31:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="run4()[pri:0, instance:com.toolsqa.framework.tests.TestNG_003@1fbc7afb]" name="run4" duration-ms="16" started-at="2015-10-12T15:31:57Z" finished-at="2015-10-12T15:31:57Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.toolsqa.framework.pageobjectmodel.StoreLoginPage.<init>(StoreLoginPage.java:17)
+	at com.toolsqa.framework.pageobjectmodel.StoreLoginPage.<init>(StoreLoginPage.java:11)
+	at com.toolsqa.framework.tests.TestNG_001.testRun1(TestNG_001.java:17)
+	at com.toolsqa.framework.tests.TestNG_003.run4(TestNG_003.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run4 -->
+        <test-method status="PASS" signature="run1()[pri:0, instance:com.toolsqa.framework.tests.TestNG_003@1fbc7afb]" name="run1" duration-ms="0" started-at="2015-10-12T15:31:57Z" finished-at="2015-10-12T15:31:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run1 -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_003@1fbc7afb]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-10-12T15:31:57Z" finished-at="2015-10-12T15:31:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_003@1fbc7afb]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-10-12T15:31:57Z" finished-at="2015-10-12T15:31:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_003@1fbc7afb]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-10-12T15:31:57Z" finished-at="2015-10-12T15:31:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_003@1fbc7afb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-10-12T15:31:57Z" finished-at="2015-10-12T15:31:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="validateDiscountText()[pri:0, instance:com.toolsqa.framework.tests.TestNG_003@1fbc7afb]" name="validateDiscountText" duration-ms="16" started-at="2015-10-12T15:31:57Z" finished-at="2015-10-12T15:31:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDiscountText -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_003@1fbc7afb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-10-12T15:31:57Z" finished-at="2015-10-12T15:31:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.toolsqa.framework.tests.TestNG_003 -->
+      <class name="com.toolsqa.framework.tests.TestNG_002">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_002@2c8d66b2]" name="beforeMethod" is-config="true" duration-ms="4001" started-at="2015-10-12T15:32:11Z" finished-at="2015-10-12T15:32:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="run()[pri:0, instance:com.toolsqa.framework.tests.TestNG_002@2c8d66b2]" name="run" duration-ms="1" started-at="2015-10-12T15:32:15Z" finished-at="2015-10-12T15:32:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- run -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_002@4563e9ab]" name="afterMethod" is-config="true" duration-ms="1121" started-at="2015-10-12T15:03:58Z" finished-at="2015-10-12T15:03:59Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_002@2c8d66b2]" name="afterMethod" is-config="true" duration-ms="1125" started-at="2015-10-12T15:32:15Z" finished-at="2015-10-12T15:32:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- com.toolsqa.framework.tests.TestNG_002 -->
+      <class name="com.toolsqa.framework.tests.TestNG_001">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_001@3cb5cdba]" name="beforeMethod" is-config="true" duration-ms="4464" started-at="2015-10-12T15:31:57Z" finished-at="2015-10-12T15:32:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testRun1()[pri:0, instance:com.toolsqa.framework.tests.TestNG_001@3cb5cdba]" name="testRun1" duration-ms="8531" started-at="2015-10-12T15:32:01Z" finished-at="2015-10-12T15:32:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRun1 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_001@3cb5cdba]" name="afterMethod" is-config="true" duration-ms="1194" started-at="2015-10-12T15:32:10Z" finished-at="2015-10-12T15:32:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.toolsqa.framework.tests.TestNG_001 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

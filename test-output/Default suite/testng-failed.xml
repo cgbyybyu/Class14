@@ -3,11 +3,25 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.toolsqa.framework.xml.NewTestXML">
+      <class name="com.toolsqa.framework.tests.TestNG_003">
         <methods>
-          <include name="AssertStringEqualAndIdenticalToSelf"/>
+          <include name="afterMethod"/>
+          <include name="run4"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.toolsqa.framework.xml.NewTestXML -->
+      </class> <!-- com.toolsqa.framework.tests.TestNG_003 -->
+      <class name="com.toolsqa.framework.tests.TestNG_002">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.toolsqa.framework.tests.TestNG_002 -->
+      <class name="com.toolsqa.framework.tests.TestNG_001">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.toolsqa.framework.tests.TestNG_001 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
