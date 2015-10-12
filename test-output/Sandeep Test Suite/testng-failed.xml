@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Sandeep Test Suite]">
+  <test name="Sandeep(failed)">
+    <classes>
+      <class name="com.toolsqa.framework.tests.TestNG_002">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.toolsqa.framework.tests.TestNG_002 -->
+      <class name="com.toolsqa.framework.tests.TestNG_001">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="testRun"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.toolsqa.framework.tests.TestNG_001 -->
+      <class name="com.toolsqa.framework.tests.TestNG_003">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="run1"/>
+        </methods>
+      </class> <!-- com.toolsqa.framework.tests.TestNG_003 -->
+    </classes>
+  </test> <!-- Sandeep(failed) -->
+</suite> <!-- Failed suite [Sandeep Test Suite] -->
