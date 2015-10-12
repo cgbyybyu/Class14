@@ -2,16 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="192" started-at="2015-09-10T19:52:14Z" finished-at="2015-09-10T19:52:14Z">
+  <suite name="Default suite" duration-ms="6108" started-at="2015-10-12T22:03:53Z" finished-at="2015-10-12T22:03:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="192" started-at="2015-09-10T19:52:14Z" finished-at="2015-09-10T19:52:14Z">
-      <class name="com.toolsqa.framework.xml.NewTestXML">
-        <test-method status="PASS" signature="AssertStringEqualAndIdenticalToSelf()[pri:0, instance:com.toolsqa.framework.xml.NewTestXML@256216b3]" name="AssertStringEqualAndIdenticalToSelf" duration-ms="168" started-at="2015-09-10T12:52:14Z" finished-at="2015-09-10T12:52:14Z">
+    <test name="Default test" duration-ms="6108" started-at="2015-10-12T22:03:53Z" finished-at="2015-10-12T22:03:59Z">
+      <class name="com.toolsqa.framework.tests.TestNG_002">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_002@4563e9ab]" name="beforeMethod" is-config="true" duration-ms="4964" started-at="2015-10-12T15:03:53Z" finished-at="2015-10-12T15:03:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AssertStringEqualAndIdenticalToSelf -->
-      </class> <!-- com.toolsqa.framework.xml.NewTestXML -->
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="run()[pri:0, instance:com.toolsqa.framework.tests.TestNG_002@4563e9ab]" name="run" duration-ms="6" started-at="2015-10-12T15:03:58Z" finished-at="2015-10-12T15:03:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.toolsqa.framework.tests.TestNG_002@4563e9ab]" name="afterMethod" is-config="true" duration-ms="1121" started-at="2015-10-12T15:03:58Z" finished-at="2015-10-12T15:03:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.toolsqa.framework.tests.TestNG_002 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
