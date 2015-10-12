@@ -15,7 +15,7 @@ public class TestRunner {
 		ArrayList<ITestCase> testCases = new ArrayList<>();
 				
 		testCases.add(new LoginTestUsingFramework());
-		//testCases.add(new LoginTestUsingFramework());
+		testCases.add(new LoginTestUsingFramework());
 		
 		/* testCases.add(new LoginTestUsingFramework());
 		testCases.add(new LoginTestUsingFramework());
